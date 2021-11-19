@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="stylesheet.css">
     <title>たらそばアドオン-404</title>
+    
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+    //共通パーツ読み込み
+      $(function() {
+           $("#header").load("header.html");
+           $("#side").load("side.html");
+           $("#footer").load("footer.html");
+    });
+    </script>
+    
 </head>
 <body>
-    <h1>たらそばアドオン</h1>
-    <nav>
-        <ul>
-          <li><a href="https://tarasoba.github.io/add-on/home">ホーム</a></li>
-          <li><a href="https://tarasoba.github.io/add-on/list">アドオン一覧</a></li>
-          <li><a href="https://tarasoba.github.io/add-on/tos">利用規約</a></li>
-          <li><a href="https://twitter.com/tarasoba9672" target="_blank">Twitter</a></li>
-        </ul>
-    </nav>
+    
+    <div id="header"></div>
+
     <div class="notfound">
         <h1>
             404 Not Found
