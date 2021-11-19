@@ -2,20 +2,20 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;URL=https://tarasoba.github.io/add-on/home">
     <link rel="stylesheet" href="stylesheet.css">
     <title>たらそばアドオン</title>
+
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+    //共通パーツ読み込み
+      $(function() {
+        $("#header").load("parts/header.html");
+    });
+    </script>
+    
 </head>
 <body>
-    <h1>たらそばアドオン</h1>
-    <nav>
-        <ul>
-          <li><a href="https://tarasoba.github.io/add-on/home">ホーム</a></li>
-          <li><a href="https://tarasoba.github.io/add-on/list">アドオン一覧</a></li>
-          <li><a href="https://tarasoba.github.io/add-on/tos">利用規約</a></li>
-          <li><a href="https://twitter.com/tarasoba9672" target="_blank">Twitter</a></li>
-        </ul>
-    </nav>
-    
-    
+    <div id="header"></div>
 </body>
 </html>
