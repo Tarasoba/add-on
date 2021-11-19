@@ -41,3 +41,7 @@ nav{
   .text .border{
     border: black solid 1px;
   }
+  .notfound{
+    font-size: 20px;
+    text-align: center;
+  }
