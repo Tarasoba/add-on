@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>たらそばアドオン-イスアドオン</title>
+
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+    //共通パーツ読み込み
+      $(function() {
+        $("#header").load("parts/header.html");
+        $("#footer").load("parts/footer.html");
+    });
+    </script>
+    
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="title">
+        <h1>イスアドオン</h1>
+    </div>
+    <div class="text">
+        <h3>【概要】</h3>
+        <p>
+            座れるイスを追加するアドオン。<br>
+            「/give @p tarasoba:chair」で入手できます。<br>
+            今のところレシピ無し
+        </p>
+        <br>
+        <h3>【画像】</h3>
+        <p class="ss">
+            <img src="img/イスアドオン/1.png">
+            <img src="img/イスアドオン/2.png">
+        </p>
+        <br>
+        <h3>【更新履歴】</h3>
+        <div class="changelog">
+            <div class="version">
+                v1.0.0
+            </div>
+            <div class="date">
+                1/1/21
+            </div>
+            <div class="changes">
+                配布開始
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+</html>
