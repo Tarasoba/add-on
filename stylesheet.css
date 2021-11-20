@@ -85,15 +85,18 @@ nav{
     display: inline-block;
   }
   footer{
-
+    width: 100%;
     border: solid rgb(100, 100, 100);
     background-color: rgb(100, 100, 100);
     color:white;
     height: 70px;
     margin-top: 20px;
+    position: absolute;
+    bottom: 0;
   }
   footer p{
     font-size: 12px;
     text-align: center;
     margin-top: 20px;
+    
   }
