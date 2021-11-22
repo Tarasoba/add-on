@@ -1,5 +1,14 @@
+@charset "UTF-8";
+html {
+scroll-behavior: smooth;
+}
+
 body{
   font-family: "Meiryo";
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
 }
 h1 {
     text-align:center;
@@ -32,11 +41,42 @@ nav{
     list-style:disc;
     line-height: 32px;
   }
-  .text{
-    padding: 0% 25%;
-    font-size: 20px;
-    margin: auto 100px;
+  @media screen and (min-width:1000px)
+  {
+    .text{
+      padding: 0 50vh;
+      font-size: 20px;
+      margin: auto 100px;
+    }
   }
+  .title h1{
+    margin: 35px auto;
+    height: 75px;
+    width: 800px;
+    font-size: 270%;
+    color: cornflowerblue;
+    font-weight:80;
+    border-bottom: solid gray 2px;
+  }
+  @media screen and (max-width:1000px)
+  {
+    .text{
+      padding: 0 0;
+      font-size: 20px;
+      margin: auto 100px;
+    }
+  }
+  .title h1{
+    margin: 35px auto;
+    height: 75px;
+    width: 800px;
+    font-size: 270%;
+    color: cornflowerblue;
+    font-weight:80;
+    border-bottom: solid gray 2px;
+  }
+
+
   .text p{
     line-height: 32px;
   }
@@ -55,15 +95,7 @@ nav{
     font-size: 20px;
     text-align: center;
   }
-  .title h1{
-    margin: 35px auto;
-    height: 75px;
-    width: 800px;
-    font-size: 270%;
-    color: cornflowerblue;
-    font-weight:80;
-    border-bottom: solid gray 2px;
-  }
+
   p.ss img{
     max-width: 100%;
     max-height: 100%;
@@ -85,19 +117,11 @@ nav{
     display: inline-block;
   }
   footer{
-    width: 99%;
-    align-self: center;
-    border: solid rgb(100, 100, 100);
+    width: 100%;
     background-color: rgb(100, 100, 100);
     color:white;
-    height: 90px;
-    margin-top: 20px;
-    position: absolute;
-    bottom: 0;
-  }
-  footer p{
     font-size: 12px;
     text-align: center;
-    margin-top: 20px;
-    
+    padding: 20px 0%;
+    margin: 60px 0 0 0;
   }
