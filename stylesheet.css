@@ -181,6 +181,10 @@ h3.list {
   font-size: 20px;
 }
 
+.linkcard:hover{
+  opacity: 0.7;
+  transition: 0.4s;
+}
 .linkcard a {
   position: absolute;
   top: 0;
@@ -240,6 +244,7 @@ h3.list {
     line-height: 400%;
   }
 }
+
 .em {
   -webkit-transform: skewX(-15deg);
   -moz-transform: skewX(-15deg);
