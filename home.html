@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta property="og:url" content="https://tarasoba.github.io/add-on/home">
-    <meta property="og:title" content="ホーム">
-    <meta property="og:description" content="たらそばアドオン">
-    <meta property="og:type" content="article">
-    <meta property="og:image" content="https://raw.githubusercontent.com/Tarasoba/add-on/main/tarasoba.png">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/Tarasoba/add-on/main/tarasoba.png">
-    <meta name="twitter:site" content="@tarasoba9672">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>たらそばアドオン-ホーム</title>
 
-    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:url" content="https://tarasoba.github.io/add-on/home">
+  <meta property="og:title" content="ホーム">
+  <meta property="og:description" content="たらそばアドオン">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Tarasoba/add-on/main/tarasoba.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Tarasoba/add-on/main/tarasoba.png">
+  <meta name="twitter:site" content="@tarasoba9672">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>たらそばアドオン-ホーム</title>
+
+  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script>
     //共通パーツ読み込み
-      $(function() {
-        $("#header").load("parts/header.html");
-        $("#footer").load("parts/footer.html");
+    $(function () {
+      $("#header").load("parts/header.html");
+      $("#footer").load("parts/footer.html");
     });
-    </script>
+  </script>
 
 </head>
+
 <body>
 
   <div id="header"></div>
@@ -37,8 +39,22 @@
       メニューの「アドオン一覧」から作ったアドオンが見られます。<br>
     </p>
     <p>バグに関しては <a href="https://twitter.com/tarasoba9672" target="_blank">Twitter</a> のDMなどで言っていただけるとありがたいです。</p>
+    <br>
+    <h2>【注意】</h2>
+    <p>
+      どうやらiOSのバージョンが13.0以上だとmcpack、mcaddonなどの拡張子が使えないみたいです。<br>
+      この問題がすでに解決しているのかどうかは知らないので(おい)一応書いておきますｽｿｿ...<br>
+      Yahoo知恵袋に解決策が載ってたのでリンクです→<a
+        href="https://www.google.com/url?q=https%3A%2F%2Fdetail.chiebukuro.yahoo.co.jp%2Fqa%2Fquestion_detail%2Fq13217020318&sa=D&sntz=1&usg=AFQjCNHHZLZjapSBA9gAVpQWQlCTUFdrWw">Yahoo知恵袋に飛びます</a>
+      <br><br>
+      <font size="3">
+        もし「この問題はもう解決してるよー」とかあったら連絡ください。よろしくお願いします
+      </font>
+    </p>
   </div>
+
 
   <div id="footer"></div>
 </body>
+
 </html>
