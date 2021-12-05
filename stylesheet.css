@@ -28,40 +28,118 @@ h1 {
 }
 
 nav {
-  width: 100%;
-  height: 70px;
-  background-color: dimgray;
-  padding-top: 1px;
-  box-sizing: border-box;
+  background: dimgray;
 }
 
 nav ul {
   display: flex;
-  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0 30%;
 }
 
 nav li {
+  width: 100%;
+  padding: 20px 0;
   list-style: none;
-  padding: 0% 2%;
+  text-align: center;
 }
 
 nav a {
-  display: block;
   text-decoration: none;
   color: white;
-  margin-right: 35px;
 }
 
 li {
   list-style: disc;
   line-height: 32px;
 }
+.title h1 {
+  margin: 35px auto;
+  height: 75px;
+  width: 80%;
+  min-width: 300px;
+  max-width: 800px;
+  font-size: 270%;
+  color: cornflowerblue;
+  font-weight: 80;
+  border-bottom: solid gray 2px;
+}
 
-@media screen and (min-width:1000px) {
+
+@media screen and (max-width:480px) {
+
+  /*スマホ用*/
+  h1 a {
+    text-align: center;
+    font-size: 34px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 100px;
+    /*    border: firebrick solid;*/
+  }
+
+  nav li {
+    width: 100%;
+    padding: 2px 0;
+    list-style: none;
+    text-align: center;
+    /*    border: aqua solid;*/
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .title h1 {
+    margin: 30px auto;
+    height: 75px;
+    width: 80%;
+    min-width: 300px;
+    max-width: 800px;
+    font-size: 200%;
+    color: cornflowerblue;
+    font-weight: 80;
+    border-bottom: solid gray 2px;
+  }
+
   .text {
-    padding: 0 50vh;
+    padding: 0 15px;
+    font-size: 14px;
+    margin: 0 0px;
+  }
+
+  .text .small {
+    font-size: 4px;
+  }
+
+  .linkcard {
+    border: solid 1px gray;
+    padding: 7px;
+    margin: 10px 10%;
+    position: relative;
+  }
+}
+
+
+@media screen and (min-width:1024px) {
+
+  /*PC大画面*/
+  .text {
+    padding: 0 10%;
     font-size: 20px;
-    margin: auto 100px;
+    margin: auto 20em;
+  }
+
+  .text .small {
+    font-size: 15px;
   }
 
   .linkcard {
@@ -73,11 +151,24 @@ li {
 }
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) and (min-width:480px) {
+
+  /*ウィンドウ用*/
   .text {
     padding: 0 0;
     font-size: 20px;
     margin: auto 100px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0 10%;
+  }
+
+  .text .small {
+    font-size: 15px;
   }
 
   .linkcard {
@@ -88,15 +179,8 @@ li {
   }
 }
 
-.title h1 {
-  margin: 35px auto;
-  height: 75px;
-  width: 800px;
-  font-size: 270%;
-  color: cornflowerblue;
-  font-weight: 80;
-  border-bottom: solid gray 2px;
-}
+
+
 
 
 .text p {
@@ -209,44 +293,18 @@ h3.list {
   padding-left: 120px;
 }
 
-@media only screen and (max-device-width : 480px) {
-  h1 {
-    text-align: center;
-    font-size: 500%;
-    font-family: sans-serif;
-    letter-spacing: 3px;
-  }
+.movie {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
 
-  nav {
-    width: 100%;
-    height: 100px;
-    background-color: dimgray;
-    padding-top: 1px;
-    box-sizing: border-box;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: center;
-  }
-
-  nav li {
-    list-style: none;
-    padding: 0% 2%;
-  }
-
-  nav a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    margin-right: 35px;
-    font-size: 200%;
-  }
-
-  li {
-    list-style: disc;
-    line-height: 400%;
-  }
+.movie iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .em {
@@ -254,7 +312,6 @@ h3.list {
   -moz-transform: skewX(-15deg);
   -o-transform: skewX(-15deg);
   transform: skewX(-15deg);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=-0.26794919243112214, M21=0, M22=1, SizingMethod='auto expand')";
   font-size: 15px;
   color: dimgray;
 }
