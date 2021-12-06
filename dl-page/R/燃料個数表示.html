@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../../stylesheet.css">
     <title>たらそばアドオン-燃料個数表示</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
     <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
     <script>
         //共通パーツ読み込み
@@ -46,7 +47,7 @@
         <br>
         <h3>【画像】</h3>
         <p class="ss">
-            <img src="../../img/R/燃料個数表示/1.webp">
+            <img class="lazyload" src="../../img/R/燃料個数表示/1.webp">
         </p>
         <br>
         <h3>【参考動画】</h3>
@@ -82,6 +83,10 @@
     </div>
     <div id="footer"></div>
 
+    <script>
+        lazyload();
+    </script>
+    
 </body>
 
 </html>

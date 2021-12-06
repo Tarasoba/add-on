@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../../stylesheet.css">
     <title>たらそばアドオン-ほうきアドオン</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
     <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
     <script>
         //共通パーツ読み込み
@@ -43,8 +44,8 @@
         <br>
         <h3>【画像】</h3>
         <p class="ss">
-            <img src="../../img/R+B/ほうきアドオン/1.webp">
-            <img src="../../img/R+B/ほうきアドオン/2.webp">
+            <img class="lazyload" src="../../img/R+B/ほうきアドオン/1.webp">
+            <img class="lazyload" src="../../img/R+B/ほうきアドオン/2.webp">
         </p>
         <h3>【レシピ】</h3>
         <p>
@@ -54,7 +55,7 @@
                 ・経験値ビン×２
         </p>
         <p class="ss">
-            <img src="../../img/R+B/ほうきアドオン/recipe_1.webp">
+            <img class="lazyload" src="../../img/R+B/ほうきアドオン/recipe_1.webp">
         </p>
         <br>
         <h3>【DLリンク】</h3>
@@ -79,6 +80,10 @@
     </div>
     <div id="footer"></div>
 
+    <script>
+        lazyload();
+    </script>
+    
 </body>
 
 </html>
