@@ -17,7 +17,8 @@
   <link rel="stylesheet" href="stylesheet.css">
   <title>たらそばアドオン-ホーム</title>
 
-  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+<!--
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
   <script>
     //共通パーツ読み込み
     $(function () {
@@ -25,12 +26,25 @@
         $("#footer").load("parts/footer.html");
     });
 </script>
+-->
 
 </head>
 
 <body>
 
-  <div id="header"></div>
+  <div id="header">
+    <h1>
+      <a href="https://tarasoba.github.io/add-on/home">たらそばアドオン</a>
+    </h1>
+  <nav>
+      <ul>
+        <li><a href="https://tarasoba.github.io/add-on/home">ホーム</a></li>
+        <li><a href="https://tarasoba.github.io/add-on/list">アドオン一覧</a></li>
+        <li><a href="https://tarasoba.github.io/add-on/tos">利用規約</a></li>
+        <li><a href="https://twitter.com/tarasoba9672" target="_blank">Twitter</a></li>
+      </ul>
+    </nav>
+</div>
 
   <div class="text">
     <h2> ようこそ！</h2>
@@ -54,7 +68,18 @@
   </div>
 
 
-  <div id="footer"></div>
+  <div id="footer">
+    <footer>
+        <p>
+            ここにあるパックはすべて統合版マインクラフトで使えるものです。<br>
+            これらのアドオンを使ったことによるワールドなどの不具合について、一切の責任を負いません。
+        </p>
+        <p>
+            &copy; 2021 たらそば
+        </p>
+    </footer>
+</div>
+
 </body>
 
 </html>
