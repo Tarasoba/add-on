@@ -114,12 +114,12 @@ li {
 
   .text {
     padding: 0 15px;
-    font-size: 14px;
+    font-size: 1.06em;
     margin: 0 0px;
   }
 
   .text .small {
-    font-size: 4px;
+    font-size: 0.8em;
   }
 
   .linkcard {
@@ -131,12 +131,12 @@ li {
 }
 
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1440px) {
 
   /*PC大画面*/
   .text {
     padding: 0 10%;
-    font-size: 20px;
+    font-size: 1.06em;
     margin: auto 20em;
   }
 
@@ -161,12 +161,12 @@ li {
   }
 }
 
-@media screen and (max-width:1024px) and (min-width:480px) {
+@media screen and (max-width:1440px) and (min-width:480px) {
 
   /*ウィンドウ用*/
   .text {
     padding: 0 0;
-    font-size: 20px;
+    font-size: 1.06em;
     margin: auto 100px;
   }
 
@@ -183,7 +183,7 @@ li {
 }
 
 .text p {
-  line-height: 32px;
+  line-height: 1.8em;
 }
 
 .text .tos {
@@ -196,8 +196,14 @@ li {
   border: black solid 1px;
 }
 
+/* ↓リンクの色↓ */
 .text a {
-  color: dodgerblue;
+  color: #0366D6;
+  text-decoration: none;
+}
+
+.text a:hover {
+  text-decoration: underline;
 }
 
 .url {
@@ -229,23 +235,23 @@ p.ss img {
   max-height: 100%;
 }
 
+.changelog{
+  max-width: 100em;
+  font-size: 2vmin;
+}
 .changelog .version {
-  width: 80px;
-  height: auto;
-  border-right: solid black 2px;
-  line-height: 32px;
   display: inline-block;
+  width: 4em;
+  /* border: solid 1px; */
 }
-
 .changelog .date {
-  margin-left: 5px;
-  width: 100px;
   display: inline-block;
+  width: 4.8em;
+  /* border: solid 1px; */
 }
-
 .changelog .changes {
-  line-height: 32px;
   display: inline-block;
+  /* border: solid 1px; */
 }
 
 footer {
