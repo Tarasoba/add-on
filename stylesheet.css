@@ -102,11 +102,11 @@ li {
 
   .title h1 {
     margin: 30px auto;
-    height: 75px;
+    height: 50px;
     width: 80%;
     min-width: 300px;
     max-width: 800px;
-    font-size: 200%;
+    font-size: 150%;
     color: cornflowerblue;
     font-weight: 80;
     border-bottom: solid gray 2px;
@@ -235,20 +235,23 @@ p.ss img {
   max-height: 100%;
 }
 
-.changelog{
+.changelog {
   max-width: 100em;
   font-size: 2vmin;
 }
+
 .changelog .version {
   display: inline-block;
   width: 4em;
   /* border: solid 1px; */
 }
+
 .changelog .date {
   display: inline-block;
   width: 4.8em;
   /* border: solid 1px; */
 }
+
 .changelog .changes {
   display: inline-block;
   /* border: solid 1px; */
