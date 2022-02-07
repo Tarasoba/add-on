@@ -67,11 +67,29 @@
             </picture>
         </p>
         <h3>【DLリンク】</h3>
-        <a
-            href="https://www.dropbox.com/s/cm8ztia5bt90ngi/%E5%A3%8A%E3%82%8C%E3%82%8B%E5%9C%9F%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%20v1.0.0.mcaddon?dl=1">
-            壊れる土ブロック v1.0.0.mcpack
-        </a>
-        <br>
+        <div class="dl_link">
+            <script>
+                function TOS() {
+                    const tos = document.getElementById("tos");
+                    const button = document.getElementById("button");
+                    if (tos.checked) {
+                        button.disabled = false;
+                    } else {
+                        button.disabled = true;
+                    }
+                }
+            </script>
+            <label>
+                <input type="checkbox" style="transform:scale(1.5);" onchange="button.disabled=!this.checked;">
+                <!--idはjsから直接呼び出せる onchangeのthisは自身を指す-->
+                <a href="https://tarasoba.github.io/add-on/tos">利用規約</a>に同意する
+            </label><br>
+            <button class="dl_button" id="button" disabled
+                onclick="location.href='https://www.dropbox.com/s/cm8ztia5bt90ngi/%E5%A3%8A%E3%82%8C%E3%82%8B%E5%9C%9F%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%20v1.0.0.mcaddon?dl=1';">
+                ダウンロード<br>
+                <h5>壊れる土ブロック v1.0.0.mcpack</h5>
+            </button>
+        </div>
         <br>
         <h3>【更新履歴】</h3>
         <div class="changelog">
