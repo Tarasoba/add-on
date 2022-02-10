@@ -88,7 +88,7 @@ li {
   border-bottom: solid gray 2px;
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (1440px <= width) {
 
   /*PCフルサイズ*/
   .text {
@@ -132,7 +132,7 @@ li {
   }
 }
 
-@media screen and (max-width:1440px) and (min-width:480px) {
+@media screen and (480px <= width < 1440px) {
 
   /*ウィンドウ用*/
   .text {
@@ -177,7 +177,7 @@ li {
 
 }
 
-@media screen and (max-width:480px) {
+@media screen and (width < 480px) {
 
   /*スマホ用*/
   h1 a {
@@ -467,18 +467,21 @@ h3.list {
   font-size: 15px;
   color: dimgray;
 }
-.top{
+
+.top {
   position: fixed;
   bottom: 4%;
   right: 4%;
   z-index: 10000;
 }
+
 .top svg {
   width: 65px;
   height: 65px;
   opacity: 0.5;
 }
-.top svg:hover{
+
+.top svg:hover {
   opacity: 0.8;
   transition: 0.3s;
 }
