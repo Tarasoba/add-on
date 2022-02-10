@@ -88,7 +88,8 @@ li {
   border-bottom: solid gray 2px;
 }
 
-@media screen and (1440px <= width) {
+/*1440px以上*/
+@media screen and (min-width:1440px) {
 
   /*PCフルサイズ*/
   .text {
@@ -132,7 +133,8 @@ li {
   }
 }
 
-@media screen and (480px <= width < 1440px) {
+/*480px以上1440px未満*/
+@media screen and (min-width:480px) and (max-width:1439.8px) {
 
   /*ウィンドウ用*/
   .text {
@@ -177,7 +179,8 @@ li {
 
 }
 
-@media screen and (width < 480px) {
+/*480px未満*/
+@media screen and (max-width:479.8px) {
 
   /*スマホ用*/
   h1 a {
@@ -259,6 +262,7 @@ li {
     width: 85%;
   }
 }
+
 
 @media screen and (max-width:1660px) and (min-width:480px) {
   .linkcard {
