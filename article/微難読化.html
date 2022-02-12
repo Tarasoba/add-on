@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://tarasoba.github.io/add-on/favicon.ico">
+    <link rel="apple-touch-icon" href="https://tarasoba.github.io/add-on/apple-touch-icon-180x180.png" sizes="180x180">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="https://tarasoba.github.io/add-on/article/微難読化">
+    <meta property="og:title" content="微難読化">
+    <meta property="og:description" content="jsonを" 微"難読化できるpythonプログラム">
+    <meta property="og:type" content="article">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/Tarasoba/add-on/main/img/article/webp/微難読化.webp">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/Tarasoba/add-on/main/img/article/webp/微難読化.webp">
+    <meta name="twitter:site" content="@tarasoba9672">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <title>たらそばアドオン-微難読化</title>
+
+    <script src="https://tarasoba.github.io/add-on/js/jquery-3.6.0.min.js"></script>
+    <script>
+        //共通パーツ読み込み
+        $(function () {
+            $("#header").load("../../parts/header.html");
+            $("#footer").load("../../parts/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="title">
+        <h1>微難読化（Python）</h1>
+    </div>
+    <div class="text">
+        <h3>概要</h3>
+        <p>
+            jsonなどのテキストファイルを微難読化するpythonプログラムです。<br>
+            アドオンのjsonファイルを他人に見られたくないときに使えます。(※)
+        </p>
+        <p>
+            小文字のアルファベットのみをUnicode(UTF-16BE)形式風に変換します。<br>
+            'true','false'は難読化しないようにしました。
+        </p>
+        <p class="em">
+            ※ decode.py や このようなサイト（<a
+                href="https://so-zou.jp/web-app/text/encode-decode/">https://so-zou.jp/web-app/text/encode-decode/</a>）を通すことで簡単に読めるようになります。完全に見られないようにするものではありません。
+        </p>
+        <br>
+        <h3>注意</h3>
+        <p><b>
+                <font color="red">pythonのインストールが必要です。</font>
+            </b></p>
+        <br>
+        <h3>操作</h3>
+        <p>
+            ドラッグアンドドロップの簡単操作<br>
+            複数ファイルにも対応しています。
+        </p>
+        <p>
+            encode.pyはエンコード：微難読化<br>
+            decode.pyはデコード：難読化を解除
+        </p>
+        <p class="em">
+            ※何回もプログラムに通すことでどんどん難読化できますが、マイクラが読み込めるのは１回通したときのみです。<br>
+            （例：ab → \u0061\u0062 → \\u00750061\\u00750062 =>
+            読み込めるのはabと\u0061\u0062）
+        </p>
+
+        <br>
+        <h3>画像</h3>
+        <p class="ss">
+            <picture>
+                <source type="image/webp" srcset="../img/webp/article/微難読化/1.webp">
+                <img src="../img/jpeg/article/微難読化/1.jpg">
+            </picture>
+            <br>
+            ▲ pythonプログラムにD&Dするだけ
+            <br>
+            <br>
+            <picture>
+                <source type="image/webp" srcset="../img/webp/article/微難読化/2.webp" width="50%">
+                <img src="../img/jpeg/article/微難読化/2.jpg">
+            </picture>
+            <br>
+            ▲ D&Dしたあと、一瞬タスクバーにpythonアイコンが表示されます。処理が終わると消えます。
+        </p>
+        <br>
+        <h3>DLリンク</h3>
+        <div class="dl_link">
+            <script>
+                function TOS() {
+                    const tos = document.getElementById("tos");
+                    const button = document.getElementById("button");
+                    if (tos.checked) {
+                        button.disabled = false;
+                    } else {
+                        button.disabled = true;
+                    }
+                }
+            </script>
+            <label>
+                <input type="checkbox" style="transform:scale(1.5);" onchange="button.disabled=!this.checked;">
+                <a href="https://tarasoba.github.io/add-on/tos">利用規約</a>に同意する
+            </label><br>
+            <button class="dl_button" id="button" disabled
+                onclick="location.href='https://www.dropbox.com/s/ilfbb8lcyjaym0o/%E5%BE%AE%E9%9B%A3%E8%AA%AD%E5%8C%96%20v1.1.0.zip?dl=1';">
+                ダウンロード<br>
+                <h5>微難読化 v1.1.0.zip</h5>
+            </button>
+        </div>
+        <br>
+        <h3>更新履歴</h3>
+        <div class="changelog">
+            <div>
+                <span class="version">v1.1.0</span>
+                <span class="date">2/12/22</span>
+                <span class="changes">複数ファイルに対応</span>
+            </div>
+            <div>
+                <span class="version">v1.0.0</span>
+                <span class="date">9/15/21</span>
+                <span class="changes">配布開始</span>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+</body>
+
+</html>

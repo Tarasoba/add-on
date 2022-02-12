@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://tarasoba.github.io/add-on/favicon.ico">
+  <link rel="apple-touch-icon" href="https://tarasoba.github.io/add-on/apple-touch-icon-180x180.png" sizes="180x180">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:url" content="https://tarasoba.github.io/add-on/list">
+  <meta property="og:title" content="アドオン一覧">
+  <meta property="og:description" content="たらそばアドオン">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Tarasoba/add-on/main/tarasoba.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Tarasoba/add-on/main/tarasoba.png">
+  <meta name="twitter:site" content="@tarasoba9672">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>たらそばアドオン-記事</title>
+
+  <script src="https://tarasoba.github.io/add-on/js/jquery-3.6.0.min.js"></script>
+  <script>
+    //共通パーツ読み込み
+    $(function () {
+      $("#header").load("parts/header.html");
+      $("#footer").load("parts/footer.html");
+      $("#top").load("parts/top.html");
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <div class="text">
+    <h2 class="bordertitle">記事</h2>
+    <p>
+      雑多な記事置き場です。（PCでレイアウトがおかしいのは記事が増えれば直ります 気にしないでね）
+    </p>
+  </div>
+  <section>
+    <!--ここから-->
+    <div class="linkcard">
+      <picture>
+        <source type="image/webp" srcset="img/webp/article/微難読化/icon.webp" class="lazyload" height="100" width="100"
+          style="float:left;">
+        <img src="img/jpeg/article/微難読化/icon.jpg" class="lazyload" height="100" width="100" style="float:left;">
+      </picture>
+      <div class="linkcard_title">
+        <b>微難読化（Python）</b>
+      </div>
+      <div class="linkcard_description">
+        jsonを"微"難読化できるプログラムを作りました
+      </div>
+      <a href="https://tarasoba.github.io/add-on/article/微難読化"></a>
+    </div>
+  </section>
+
+  <div id="top"></div>
+  <div id="footer"></div>
+
+  <script>
+    lazyload();
+  </script>
+</body>
+
+</html>

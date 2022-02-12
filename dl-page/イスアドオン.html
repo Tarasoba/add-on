@@ -26,20 +26,6 @@
             $("#footer").load("../../parts/footer.html");
         });
     </script>
-    <script>
-        $(function () {
-            $(function () {
-                $('#submit').attr('disabled', 'disabled'); //①
-                $('#chkbox').click(function () { //②
-                    if ($(this).prop('checked') == false) {//③
-                        $('#submit').attr('disabled', 'disabled');//④
-                    } else {
-                        $('#submit').removeAttr('disabled');//⑤
-                    }
-                });
-            });
-        });
-    </script>
 
 </head>
 
@@ -79,7 +65,6 @@
             </script>
             <label>
                 <input type="checkbox" style="transform:scale(1.5);" onchange="button.disabled=!this.checked;">
-                <!--idはjsから直接呼び出せる onchangeのthisは自身を指す-->
                 <a href="https://tarasoba.github.io/add-on/tos">利用規約</a>に同意する
             </label><br>
             <button class="dl_button" id="button" disabled
