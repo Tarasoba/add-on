@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://tarasoba.github.io/add-on/favicon.ico">
+    <link rel="apple-touch-icon" href="https://tarasoba.github.io/add-on/apple-touch-icon-180x180.png" sizes="180x180">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="https://tarasoba.github.io/add-on/dl-page/R/JE爆発テクスチャ">
+    <meta property="og:title" content="JE爆発テクスチャ">
+    <meta property="og:description" content="爆発パーティクルの見た目がJava版と同じになるリソパ">
+    <meta property="og:type" content="article">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/Tarasoba/add-on/main/img/webp/R/JE爆発テクスチャ/icon.webp">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/Tarasoba/add-on/main/img/webp/R/JE爆発テクスチャ/icon.webp">
+    <meta name="twitter:site" content="@tarasoba9672">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <title>たらそばアドオン-JE爆発テクスチャ</title>
+
+    <script src="https://tarasoba.github.io/add-on/js/jquery-3.6.0.min.js"></script>
+    <script>
+        //共通パーツ読み込み
+        $(function () {
+            $("#header").load("../../parts/header.html");
+            $("#footer").load("../../parts/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="title">
+        <h1>JE爆発テクスチャ</h1>
+    </div>
+    <div class="text">
+        <h3>概要</h3>
+        <p>
+            爆発パーティクルの見た目がJava版と同じになります。
+        </p>
+        <br>
+        <h3>DLリンク</h3>
+        <div class="dl_link">
+            <script>
+                function TOS() {
+                    const tos = document.getElementById("tos");
+                    const button = document.getElementById("button");
+                    if (tos.checked) {
+                        button.disabled = false;
+                    } else {
+                        button.disabled = true;
+                    }
+                }
+            </script>
+            <label>
+                <input type="checkbox" style="transform:scale(1.5);" onchange="button.disabled=!this.checked;">
+                <a href="https://tarasoba.github.io/add-on/tos">利用規約</a>に同意する
+            </label><br>
+            <button class="dl_button" id="button" disabled
+                onclick="location.href='https://www.dropbox.com/s/m28nrne4k3p88zw/Java%E7%88%86%E7%99%BA%20v1.0.0.mcpack?dl=1';">
+                ダウンロード<br>
+                <h5>JE爆発テクスチャ v1.0.0.mcpack</h5>
+            </button>
+        </div>
+        <br>
+        <h3>更新履歴</h3>
+        <div class="changelog">
+            <div>
+                <span class="version">v1.0.0</span>
+                <span class="date">8/19/20</span>
+                <span class="changes">配布開始</span>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://tarasoba.github.io/add-on/favicon.ico">
+    <link rel="apple-touch-icon" href="https://tarasoba.github.io/add-on/apple-touch-icon-180x180.png" sizes="180x180">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="https://tarasoba.github.io/add-on/dl-page/R+B/銃アドオン">
+    <meta property="og:title" content="銃アドオン">
+    <meta property="og:description" content="ピストルっぽいなにかを追加するアドオン">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Tarasoba/add-on/main/img/webp/R+B/銃アドオン/icon.webp">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Tarasoba/add-on/main/img/webp/R+B/銃アドオン/icon.webp">
+    <meta name="twitter:site" content="@tarasoba9672">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <title>たらそばアドオン-銃アドオン</title>
+
+    <script src="https://tarasoba.github.io/add-on/js/jquery-3.6.0.min.js"></script>
+    <script>
+        //共通パーツ読み込み
+        $(function () {
+            $("#header").load("../../parts/header.html");
+            $("#footer").load("../../parts/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="title">
+        <h1>銃アドオン</h1>
+    </div>
+    <div class="text">
+        <h3>概要</h3>
+        <p>
+            銃はロマンということで<br>
+            ピストルもどきを追加するアドオンです。<br>
+            敵の近くだと弾が当たらない欠陥品。
+        </p>
+        <br>
+        <h3>DLリンク</h3>
+        <div class="dl_link">
+            <script>
+                function TOS() {
+                    const tos = document.getElementById("tos");
+                    const button = document.getElementById("button");
+                    if (tos.checked) {
+                        button.disabled = false;
+                    } else {
+                        button.disabled = true;
+                    }
+                }
+            </script>
+            <label>
+                <input type="checkbox" style="transform:scale(1.5);" onchange="button.disabled=!this.checked;">
+                <a href="https://tarasoba.github.io/add-on/tos">利用規約</a>に同意する
+            </label><br>
+            <button class="dl_button" id="button" disabled
+                onclick="location.href='https://www.dropbox.com/s/1dn5bsd79k8g3ri/%E9%8A%83%E3%82%A2%E3%83%89%E3%82%AA%E3%83%B3%20v1.0.0.mcaddon?dl=1';">
+                ダウンロード<br>
+                <h5>銃アドオン v1.0.0.mcpack</h5>
+            </button>
+        </div>
+        <br>
+        <h3>更新履歴</h3>
+        <div class="changelog">
+            <div>
+                <span class="version">v1.0.0</span>
+                <span class="date">12/28/20</span>
+                <span class="changes">配布開始</span>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+</body>
+
+</html>
