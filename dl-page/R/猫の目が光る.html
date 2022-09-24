@@ -10,9 +10,9 @@
     <meta property="og:title" content="猫の目が光る">
     <meta property="og:description" content="猫の目が暗闇で光るリソパ">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="https://raw.githubusercontent.com/Tarasoba/add-on/main/img/webp/R/猫の目が光る/icon.webp">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Tarasoba/add-on/main/img/webp/R/%E7%8C%AB%E3%81%AE%E7%9B%AE%E3%81%8C%E5%85%89%E3%82%8B/icon.webp">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/Tarasoba/add-on/main/img/webp/R/猫の目が光る/icon.webp">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Tarasoba/add-on/main/img/webp/R/%E7%8C%AB%E3%81%AE%E7%9B%AE%E3%81%8C%E5%85%89%E3%82%8B/icon.webp">
     <meta name="twitter:site" content="@tarasoba9672">
     <link rel="stylesheet" href="../../stylesheet.css">
     <title>たらそばアドオン-猫の目が光る</title>
@@ -35,13 +35,13 @@
         <h1>猫の目が光る</h1>
     </div>
     <div class="text">
-        <h3>【概要】</h3>
+        <h3>概要</h3>
         <p>
             猫の目が暗い所で光るリソースパックです。<br>
             技術不足により、懐かせたペルシャ猫に 鼻 がつきます。(本来は無い)
         </p>
         <br>
-        <h3>【画像】</h3>
+        <h3>画像</h3>
         <p class="ss">
             <picture>
                 <source type="image/webp" srcset="../../img/webp/R/猫の目が光る/1.webp">
@@ -55,15 +55,37 @@
             ▲ 懐かせたペルシャ猫。違和感がぬぐえないです 悲し
         </p>
         <br>
-        <h3>【DLリンク】</h3>
-        <a
-            href="https://www.dropbox.com/s/3ddjdupjpbtulb0/%E7%8C%AB%E3%81%AE%E7%9B%AE%E3%81%8C%E5%85%89%E3%82%8B%20v1.0.0.mcpack?dl=1">
-            猫の目が光る v1.0.0.mcpack
-        </a>
+        <h3>DLリンク</h3>
+        <div class="dl_link">
+            <script>
+                function TOS() {
+                    const tos = document.getElementById("tos");
+                    const button = document.getElementById("button");
+                    if (tos.checked) {
+                        button.disabled = false;
+                    } else {
+                        button.disabled = true;
+                    }
+                }
+            </script>
+            <label>
+                <input type="checkbox" style="transform:scale(1.5);" onchange="button.disabled=!this.checked;">
+                <a href="https://tarasoba.github.io/add-on/tos">利用規約</a>に同意する
+            </label><br>
+            <button class="dl_button" id="button" disabled
+                onclick="location.href='https://www.dropbox.com/s/daxxx24po396dpj/%E7%8C%AB%E3%81%AE%E7%9B%AE%E3%81%8C%E5%85%89%E3%82%8B%20v.1.0.1.mcpack?dl=1';">
+                ダウンロード<br>
+                <h5>猫の目が光る v1.0.1.mcpack</h5>
+            </button>
+        </div>
         <br>
-        <br>
-        <h3>【更新履歴】</h3>
+        <h3>更新履歴</h3>
         <div class="changelog">
+            <div>
+                <span class="version">v1.0.1</span>
+                <span class="date">3/27/22</span>
+                <span class="changes">ヤマネコの目が表示されない問題を修正</span>
+            </div>
             <div>
                 <span class="version">v1.0.0</span>
                 <span class="date">9/3/21</span>

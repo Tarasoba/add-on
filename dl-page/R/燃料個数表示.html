@@ -35,7 +35,7 @@
         <h1>燃料個数表示</h1>
     </div>
     <div class="text">
-        <h3>【概要】</h3>
+        <h3>概要</h3>
         <p>
             燃料となるアイテムの横に「何個焼けるか」が表示されるリソースパックです。<br>
             ほぼ自分用<br>
@@ -44,7 +44,7 @@
             　その際は教えてください
         </p>
         <br>
-        <h3>【画像】</h3>
+        <h3>画像</h3>
         <p class="ss">
             <picture>
                 <source type="image/webp" srcset="../../img/webp/R/燃料個数表示/1.webp">
@@ -52,7 +52,7 @@
             </picture>
         </p>
         <br>
-        <h3>【参考動画】</h3>
+        <h3>参考動画</h3>
         <div class="movie">
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PzpqpBDz0qI"
                 title="YouTube video player" frameborder="0"
@@ -60,14 +60,31 @@
                 allowfullscreen></iframe>
         </div>
         <br>
-        <h3>【DLリンク】</h3>
-        <a
-            href="https://www.dropbox.com/s/zx3n1zpgghemkcw/%E7%87%83%E6%96%99%E5%80%8B%E6%95%B0%E8%A1%A8%E7%A4%BAv1.0.1.mcpack?dl=1">
-            燃料個数表示 v1.0.1.mcpack
-        </a>
+        <h3>DLリンク</h3>
+        <div class="dl_link">
+            <script>
+                function TOS() {
+                    const tos = document.getElementById("tos");
+                    const button = document.getElementById("button");
+                    if (tos.checked) {
+                        button.disabled = false;
+                    } else {
+                        button.disabled = true;
+                    }
+                }
+            </script>
+            <label>
+                <input type="checkbox" style="transform:scale(1.5);" onchange="button.disabled=!this.checked;">
+                <a href="https://tarasoba.github.io/add-on/tos">利用規約</a>に同意する
+            </label><br>
+            <button class="dl_button" id="button" disabled
+                onclick="location.href='https://www.dropbox.com/s/zx3n1zpgghemkcw/%E7%87%83%E6%96%99%E5%80%8B%E6%95%B0%E8%A1%A8%E7%A4%BAv1.0.1.mcpack?dl=1';">
+                ダウンロード<br>
+                <h5>燃料個数表示 v1.0.1.mcpack</h5>
+            </button>
+        </div>
         <br>
-        <br>
-        <h3>【更新履歴】</h3>
+        <h3>更新履歴</h3>
         <div class="changelog">
             <div>
                 <span class="version">v1.0.1</span>

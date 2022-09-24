@@ -36,14 +36,14 @@
         <h1>地雷アドオン</h1>
     </div>
     <div class="text">
-        <h3>【概要】</h3>
+        <h3>概要</h3>
         <p>
             プレイヤーが近づくと爆発する地雷を追加するアドオンです。<br>
             そこら辺に置いてある(自然に湧く)ので気をつけてください。<br>
             ピースフルだと爆発しない親切設計
         </p>
         <br>
-        <h3>【レシピ】</h3>
+        <h3>レシピ</h3>
         <p>
             <対人地雷><br>
                 ・レッドストーン×４<br>
@@ -53,14 +53,31 @@
             <img src="../../img/webp/R+B/地雷アドオン/recipe_1.webp">
         </p>
         <br>
-        <h3>【DLリンク】</h3>
-        <a
-            href="https://www.dropbox.com/s/af9sbs5qvck3fkn/%E5%9C%B0%E9%9B%B7%E8%BF%BD%E5%8A%A0%E3%82%A2%E3%83%89%E3%82%AA%E3%83%B3%20v1.0.0.mcaddon?dl=1">
-            地雷アドオン v1.0.0.mcpack
-        </a>
+        <h3>DLリンク</h3>
+        <div class="dl_link">
+            <script>
+                function TOS() {
+                    const tos = document.getElementById("tos");
+                    const button = document.getElementById("button");
+                    if (tos.checked) {
+                        button.disabled = false;
+                    } else {
+                        button.disabled = true;
+                    }
+                }
+            </script>
+            <label>
+                <input type="checkbox" style="transform:scale(1.5);" onchange="button.disabled=!this.checked;">
+                <a href="https://tarasoba.github.io/add-on/tos">利用規約</a>に同意する
+            </label><br>
+            <button class="dl_button" id="button" disabled
+                onclick="location.href='https://www.dropbox.com/s/af9sbs5qvck3fkn/%E5%9C%B0%E9%9B%B7%E8%BF%BD%E5%8A%A0%E3%82%A2%E3%83%89%E3%82%AA%E3%83%B3%20v1.0.0.mcaddon?dl=1';">
+                ダウンロード<br>
+                <h5>地雷アドオン v1.0.0.mcpack</h5>
+            </button>
+        </div>
         <br>
-        <br>
-        <h3>【更新履歴】</h3>
+        <h3>更新履歴</h3>
         <div class="changelog">
             <div>
                 <span class="version">v1.0.0</span>

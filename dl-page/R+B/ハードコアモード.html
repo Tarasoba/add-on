@@ -37,7 +37,7 @@
         <h1>ハードコアモード</h1>
     </div>
     <div class="text">
-        <h3>【概要】</h3>
+        <h3>概要</h3>
         <p>
             エイプリルフールで作りました。<br>
             Java版の ハードコアモード を再現しようとしたアドオンです。<br>
@@ -49,7 +49,7 @@
         </p>
         </p>
         <br>
-        <h3>【画像】</h3>
+        <h3>画像</h3>
         <p class="ss">
             <picture>
                 <source type="image/webp" srcset="../../img/webp/R+B/ハードコアモード/1.webp">
@@ -64,14 +64,31 @@
             再起動したら復活するっていう統合版の仕様上...
         </p>
         <br>
-        <h3>【DLリンク】</h3>
-        <a
-            href="https://www.dropbox.com/s/phji9vy99zdzzhc/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%B3%E3%82%A2%E3%82%A2%E3%83%89%E3%82%AA%E3%83%B3v1.0.0.mcaddon?dl=1">
-            ハードコアモード v1.0.0.mcpack
-        </a>
+        <h3>DLリンク</h3>
+        <div class="dl_link">
+            <script>
+                function TOS() {
+                    const tos = document.getElementById("tos");
+                    const button = document.getElementById("button");
+                    if (tos.checked) {
+                        button.disabled = false;
+                    } else {
+                        button.disabled = true;
+                    }
+                }
+            </script>
+            <label>
+                <input type="checkbox" style="transform:scale(1.5);" onchange="button.disabled=!this.checked;">
+                <a href="https://tarasoba.github.io/add-on/tos">利用規約</a>に同意する
+            </label><br>
+            <button class="dl_button" id="button" disabled
+                onclick="location.href='https://www.dropbox.com/s/phji9vy99zdzzhc/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%B3%E3%82%A2%E3%82%A2%E3%83%89%E3%82%AA%E3%83%B3v1.0.0.mcaddon?dl=1';">
+                ダウンロード<br>
+                <h5>ハードコアモード v1.0.0.mcpack</h5>
+            </button>
+        </div>
         <br>
-        <br>
-        <h3>【更新履歴】</h3>
+        <h3>更新履歴</h3>
         <div class="changelog">
             <div>
                 <span class="version">v1.0.0</span>
