@@ -382,6 +382,7 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin: 60px 0 0 0;
+  
 }
 
 
@@ -462,11 +463,9 @@ h3.list {
   height: 100%;
 }
 
-.em {
-  -webkit-transform: skewX(-15deg);
-  -moz-transform: skewX(-15deg);
-  -o-transform: skewX(-15deg);
-  transform: skewX(-15deg);
+
+.em{
+  font-style: italic;
   font-size: 15px;
   color: dimgray;
 }
